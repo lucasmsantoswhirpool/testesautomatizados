@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-	<test name="Default test(failed)">
-		<classes>
-			<class name="apptest.WP_CadastroInvalido">
-				<methods>
-					<include name="setUp" />
-					<include name="testecadastroinvalido" />
-				</methods>
-			</class> <!-- apptest.WP_CadastroInvalido -->
-		</classes>
-	</test> <!-- Default test(failed) -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="apptest.WP_ZeDelivery">
+        <methods>
+          <include name="testedozedelivery"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- apptest.WP_ZeDelivery -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

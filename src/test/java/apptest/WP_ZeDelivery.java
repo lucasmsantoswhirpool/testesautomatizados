@@ -43,7 +43,7 @@ public class WP_ZeDelivery extends BaseTest implements GlobalConstants {
 		init(deviceQuery);
 		// Init application / device capabilities
 		dc.setCapability("testName", "wp_TED_ZeDelivery");
-		dc.setCapability("deviceQuery",Xiaomi);
+		dc.setCapability("deviceQuery",S8 +"or"+Xiaomi);
 		//dc.setCapability("deviceQuery",androidnuvem);
 		driver = new AndroidDriver<>(new URL(getProperty("url",cloudProperties) +"/wd/hub"), dc);
 		client = new SeeTestClient(driver);
@@ -77,7 +77,7 @@ public class WP_ZeDelivery extends BaseTest implements GlobalConstants {
 		driver.findElement(By.xpath("//*[@id='streetText']")).sendKeys("Rua Pernambuco");
 		driver.findElement(By.xpath("//*[@id='numberText']")).sendKeys("33");
 		driver.findElement(By.xpath("//*[@id='neighborhoodText']")).sendKeys("Bosque");
-		driver.findElement(By.xpath("//*[@text='Salvar meu endereço para futuras compras']")).click();
+		//driver.findElement(By.xpath("//*[@text='Salvar meu endereço para futuras compras']")).click();
 		driver.findElement(By.xpath("//*[@text='Salvar']")).click();
 		try{Thread.sleep(esperandogifinicial+3000);} catch(Exception ignore){}
 		driver.swipe(168, 946, 334, 615, 2240);

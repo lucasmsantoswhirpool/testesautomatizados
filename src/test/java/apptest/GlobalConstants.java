@@ -30,7 +30,7 @@ public interface GlobalConstants {
 	  String S6Edge="@serialnumber='04157df474344822'";
 	  String androidnuvem="@serialnumber='LGUS997569cab50'";
 	  String Xiaomi="@serialnumber='0183d9629805'";
-	  String DeviceEU="@serialnumber='c8fc88d6'";
+	  String DeviceEU="@serialnumber='61943b11'";
 	  
 	  
 	  

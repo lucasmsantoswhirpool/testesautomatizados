@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 18 08:48:38 BRT 2018</td>
+<td>Started on:</td><td>Mon Oct 22 15:01:19 BRST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>233 seconds (233998 ms)</td>
+<tr><td>Total time:</td><td>189 seconds (189053 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,127 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='apptest.WP_ZeDelivery.testedozedelivery()'><b>testedozedelivery</b><br>Test class: apptest.WP_ZeDelivery</td>
-<td></td>
-<td>203</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@id=&apos;addQuantityView&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.59 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;USPL5VDR0L2&apos;, ip: &apos;10.12.73.57&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{device.majorVersion=7, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, deviceUDID=ce061716ba5f3cdd0d7e, desired={deviceQuery=@serialnumber=&apos;ce061716ba5f3cdd0d7e&apos;or@serialnumber=&apos;0183d9629805&apos;, reportDirectory=reports, reportFormat=xml, platformName=Android, testName=wp_TED_ZeDelivery}, device.serialNumber=ce061716ba5f3cdd0d7e, locationServicesAuthorized=false, device.version=7.1.1, deviceQuery=@serialnumber=&apos;ce061716ba5f3cdd0d7e&apos;or@serialnumber=&apos;0183d9629805&apos;, reportDirectory=reports, autoWebview=false, platformName=Android, udid=ce061716ba5f3cdd0d7e, testName=wp_TED_ZeDelivery, device.screenSize=1080x2220, useKeystore=false, test.type=Mobile, cloudViewLink=http://null/agent-1875205/#/5qDWOHSRakiv3W9u?1
+Picked up Grid Node (seetest_7871)
+Reserved Device : Samsung Galaxy S8 Note A0195, device.manufacture=samsung, instrumentApp=false, appiumVersion=1.8.0, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://reporter.seetest.io/#/test/4799/project/jefferson_s_pecanha@whirlpool.com/, newSessionWaitTimeout=300, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=SM-N950F, device.name=Samsung Galaxy S8 Note A0195, autoGrantPermissions=false, projectName=, gridNodePort=7871, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2018-10-22_20-01-24-024b55b6-081b-4423-b53b-d319a9122f43
+*** Element info: {Using=xpath, value=//*[@id=&apos;addQuantityView&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at apptest.WP_ZeDelivery.testedozedelivery(WP_ZeDelivery.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2133344792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2133344792'><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@id=&apos;addQuantityView&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.59 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;USPL5VDR0L2&apos;, ip: &apos;10.12.73.57&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{device.majorVersion=7, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, deviceUDID=ce061716ba5f3cdd0d7e, desired={deviceQuery=@serialnumber=&apos;ce061716ba5f3cdd0d7e&apos;or@serialnumber=&apos;0183d9629805&apos;, reportDirectory=reports, reportFormat=xml, platformName=Android, testName=wp_TED_ZeDelivery}, device.serialNumber=ce061716ba5f3cdd0d7e, locationServicesAuthorized=false, device.version=7.1.1, deviceQuery=@serialnumber=&apos;ce061716ba5f3cdd0d7e&apos;or@serialnumber=&apos;0183d9629805&apos;, reportDirectory=reports, autoWebview=false, platformName=Android, udid=ce061716ba5f3cdd0d7e, testName=wp_TED_ZeDelivery, device.screenSize=1080x2220, useKeystore=false, test.type=Mobile, cloudViewLink=http://null/agent-1875205/#/5qDWOHSRakiv3W9u?1
+Picked up Grid Node (seetest_7871)
+Reserved Device : Samsung Galaxy S8 Note A0195, device.manufacture=samsung, instrumentApp=false, appiumVersion=1.8.0, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://reporter.seetest.io/#/test/4799/project/jefferson_s_pecanha@whirlpool.com/, newSessionWaitTimeout=300, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=SM-N950F, device.name=Samsung Galaxy S8 Note A0195, autoGrantPermissions=false, projectName=, gridNodePort=7871, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2018-10-22_20-01-24-024b55b6-081b-4423-b53b-d319a9122f43
+*** Element info: {Using=xpath, value=//*[@id=&apos;addQuantityView&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at apptest.WP_ZeDelivery.testedozedelivery(WP_ZeDelivery.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>154</td>
 <td>apptest.WP_ZeDelivery@185d8b6</td></tr>
 </table><p>
 </body>
